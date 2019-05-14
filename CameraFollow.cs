@@ -10,6 +10,7 @@ public class CameraFollow : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
+        transform.position = player.position;
 	}
 	
 	// Update is called once per frame

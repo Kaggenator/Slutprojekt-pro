@@ -13,7 +13,7 @@ public class Movement : MonoBehaviour
     void Start()
     {
         Xspeed = 18f;
-        Zspeed = 10f;
+        Zspeed = 20f;
     }
 
     // Update is called once per frame
