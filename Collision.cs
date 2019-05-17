@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Collision : MonoBehaviour{
 
@@ -8,9 +9,10 @@ public class Collision : MonoBehaviour{
 
     void OnCollisionEnter(UnityEngine.Collision other)
     {
-        if(other.collider.tag == "Obstacle")
+        if(other.collider.tag == "Obstacle" || other.collider.tag != "Track")
         {
             Destroy(player);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
