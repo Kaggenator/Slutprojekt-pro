@@ -16,6 +16,7 @@ public class CameraFollow : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        //Kamerans position när den följer spelaren
         transform.position = player.position + FOV;
 	}
 }

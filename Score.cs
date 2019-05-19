@@ -7,7 +7,7 @@ public class Score : MonoBehaviour
 {
 
     public Transform player;
-    public Text score;
+    public Text scoreText;
     public float start;
 
     // Use this for initialization
@@ -19,5 +19,7 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Tar spelarens position minus startpositionen så att poängen börjar på noll
+        scoreText.text = (player.position.z - start).ToString("0");
     }
 }
